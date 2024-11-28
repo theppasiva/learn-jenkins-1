@@ -51,7 +51,7 @@ pipeline {
                     echo "toggle: ${params.TOGGLE}"
                     echo "choice: ${params.CHOICE}"
                     echo "password: ${params.PASSWORD}"
-                    #sleep 10
+                    #sleep 20
                 """
             }
         }
