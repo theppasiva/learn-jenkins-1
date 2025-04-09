@@ -25,6 +25,7 @@ pipeline {
                 echo 'Here I write shell script'
                 env
                 """
+                echo "$GREETING"
             }
         }
         
