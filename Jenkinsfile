@@ -38,7 +38,7 @@ pipeline {
             steps {
                 sh '''
                 echo 'Here I write shell script'
-                #env
+                env
                 ls -la
                 df -h
                 '''
