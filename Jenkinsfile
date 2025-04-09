@@ -5,6 +5,7 @@ pipeline {
         }
     }
     environment {
+        GREETING = 'Hello jenkins'
 
     }
     stages {
