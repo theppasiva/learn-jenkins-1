@@ -40,7 +40,7 @@ pipeline {
                 echo 'Here I write shell script'
                 #env
                 ls -la
-                #df -h
+                df -h
                 '''
                 echo "$GREETING"
                 // #sleep 30
