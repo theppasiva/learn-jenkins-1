@@ -4,6 +4,9 @@ pipeline {
             label 'AGENT-1'
         }
     }
+    environment {
+
+    }
     stages {
         stage("build"){
             steps {
@@ -17,14 +20,13 @@ pipeline {
         }
         stage("deploy") {
             steps {
-                echo "deploy"
+                sh """
+                echo 'Here I write shell script'
+                env
+                """
             }
         }
-        stage("checkin"){
-            steps{
-                echo "checkin"
-            }
-        }
+        
     }
     post { 
         always { 
