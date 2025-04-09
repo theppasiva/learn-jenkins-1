@@ -36,12 +36,12 @@ pipeline {
         }
         stage("deploy") {
             steps {
-                sh """
+                sh '''
                 echo 'Here I write shell script'
                 #env
                 #ls -la
                 #df -h
-                """
+                '''
                 echo "$GREETING"
                 // #sleep 30
                 
