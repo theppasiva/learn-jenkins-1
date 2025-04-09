@@ -27,10 +27,11 @@ pipeline {
                 sh """
                 echo 'Here I write shell script'
                 #env
+                ls -la
                 """
                 echo "$GREETING"
                 // #sleep 30
-                ls -la
+                
             }
         }
         
