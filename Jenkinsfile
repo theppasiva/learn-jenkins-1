@@ -29,7 +29,8 @@ pipeline {
                 #env
                 """
                 echo "$GREETING"
-                sleep 30
+                #sleep 30
+                ls -la
             }
         }
         
